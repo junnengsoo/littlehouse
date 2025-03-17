@@ -1,0 +1,13 @@
+Please add your own images to this folder.
+Supported formats: JPG, JPEG, PNG, GIF
+
+The application will randomly select an image to display in the popup.
+For testing, you can download sample images from sources like Unsplash (https://unsplash.com) or use your own photos.
+
+Example:
+1. Download an image
+2. Rename it to something like "popup-image.jpg"
+3. Place it in this folder
+4. Run the application
+
+Note: Make sure your images are appropriate for your use case, as they will appear as popups on your screen.

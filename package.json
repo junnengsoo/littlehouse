@@ -1,0 +1,45 @@
+{
+  "name": "image-popup-app",
+  "version": "1.0.0",
+  "description": "An application that displays an image popup every 20 minutes for 20 seconds",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "download-sample": "node download-sample-image.js",
+    "setup": "npm install && npm run download-sample",
+    "dev": "node start.js"
+  },
+  "keywords": [
+    "electron",
+    "popup",
+    "image",
+    "reminder"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.littlehouse.imagepopup",
+    "productName": "Image Popup App",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
