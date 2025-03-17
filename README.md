@@ -1,13 +1,15 @@
-# Image Popup App
+# Little House
 
-A cross-platform desktop application built with Electron that displays an image popup every 20 minutes for 20 seconds.
+A cross-platform desktop application built with Electron that locks your screen every 20 minutes for 20 seconds.
+
+# How it came about
+As a software engineer, I have a habit of occasionally looking out the window to relax my eyes and prevent strain. However, after moving to a new office with no windows, I started experiencing frequent eye strain and dryness. To adapt, I’ve been trying to develop a new habit of closing my eyes as an alternative, but I’ve struggled to maintain it. To reinforce this habit, I created Little House—a tool designed to help me and others in similar situations. I hope it benefits anyone working in a windowless office like mine, I hate it.
 
 ## Features
 
-- Shows a popup with an image every 20 minutes
+- Shows a popup with an image every 20 minutes that locks your screen
 - Popup stays visible for 20 seconds before automatically closing
 - Displays a countdown timer on both the main window and popup
-- Randomly selects images from the assets folder
 - Cross-platform (Windows, macOS, Linux)
 
 ## Installation
@@ -40,12 +42,6 @@ npm install
 1. Place your images in the `assets` folder
 2. Supported formats: JPG, JPEG, PNG, GIF
 3. The application will randomly select an image to display each time
-
-You can download a sample image for testing:
-
-```bash
-npm run download-sample
-```
 
 ## Usage
 
