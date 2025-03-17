@@ -35,7 +35,7 @@ npm run setup
 npm install
 ```
 
-### Adding Your Images
+### Adding Your Images (Optional)
 
 1. Place your images in the `assets` folder
 2. Supported formats: JPG, JPEG, PNG, GIF
